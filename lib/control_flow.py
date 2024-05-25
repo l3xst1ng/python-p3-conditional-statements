@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
+
 def admin_login(username, password):
     if (username == "admin" or username == "ADMIN") and password == "12345":
         return "Access granted"
     else:
         return "Access denied"
 
-def divide(num1, num2):
-    try:
-        quotient = num1 / num2
-        print(quotient)
-    except ZeroDivisionError:
-        print("Error: num2 cannot be equal to 0")
-    except TypeError:
-        print("Error: input must be of type int or float")
-        
+
 # def hows_the_weather(temperature):
 #     if temperature < 40:
 #         return f"It's brisk out there at {temperature}°F!"
@@ -52,7 +45,7 @@ def calculator(operation, num1, num2):
         print("Invalid operation!")
         return None
     
-    # Perform calculations based input operations
+    # Perform calculations based on input operations
     if operation == '+':
         result = num1 + num2
     elif operation == '-':
